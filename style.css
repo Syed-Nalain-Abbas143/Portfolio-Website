@@ -1,0 +1,223 @@
+
+
+nav h3 a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links ul li{
+    position: relative;
+}
+
+
+
+.links ul li::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 4px;
+    background-color: #1e40af;
+    bottom: 1px;
+    left: 1px;
+    transition: width 0.3s ease;
+}
+
+.links ul li:hover::after{
+    width: 100%;
+}
+
+.links ul li:nth-child(1)::after{
+    width: 94%;
+    left: 1px;
+}
+
+
+.sidebar{
+  transition: all 0.3 ease-in-out;
+}
+
+
+.about-heading{
+    position: relative;
+    color: #1e40af;
+    font-size: 30px;
+}
+
+
+ .about-heading::after {
+ position: absolute;
+ height: 2px;
+ background-color: #1e40af;
+ content: "";
+ bottom: 2px;
+ width: 80px; 
+ left: 50%; 
+ transform: translateX(-50%); 
+ 
+}
+
+
+ .skill-heading{
+    position: relative;
+    color: #1e40af;
+    font-size: 30px;
+}
+
+
+ .skill-heading::after {
+ position: absolute;
+ height: 2px;
+ background-color: #1e40af;
+ content: "";
+ bottom: 2px;
+ width: 70px; 
+ left: 50%; 
+ transform: translateX(-50%); 
+ 
+}
+
+.html{
+    position: relative;
+    height: 42px;
+    
+}
+.html:after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 95%;
+    background-color: #1e40af;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.css3{
+    position: relative;
+    height: 42px;
+    
+}
+.css3:after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 80%;
+    background-color: #1e40af;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+
+.js{
+    position: relative;
+    height: 42px;
+    
+}
+.js:after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 60%;
+    background-color: #1e40af;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.ux{
+    position: relative;
+    height: 42px;
+    
+}
+.ux:after{
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 60%;
+    background-color: #1e40af;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #082f49;
+    height: 30vh;
+}
+
+.footerhd{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 18px;
+}
+footer .btnss{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin-top: 20px;
+   padding-left: 4px;
+}
+footer button{
+    color: #fff;
+}
+
+footer p{
+    margin-top: 15px;
+}
+
+@media screen and (min-width:768px) {
+    .links{
+      padding-right: 10px;
+    }
+    .links ul{
+        margin-right: 10px;
+    }
+    
+}
+
+.inputs input{
+    width: 350px;
+    color: #000;
+    font-weight: 600;
+    margin-top: 25px;
+}
+.inputs textarea{
+    width: 350px;
+    height: 200px;
+    margin-top: 25px;
+    resize: none;
+}
+
+.enterbtn{
+    padding:4px 36px;
+    font-size: 20px;
+    margin: 35px 0;
+    margin-left: 200px;
+}
+
+@media screen and (max-width :768px) {
+    .img-section img{
+        height: 250px;
+        width: 250px;
+    }
+    .img-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        
+
+    }
+    footer{
+        height: 30vh;
+    }
+
+    .inputs input,textarea{
+        width: 300px;
+    }
+    
+}
